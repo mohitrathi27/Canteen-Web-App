@@ -1,0 +1,41 @@
+body {
+  /* margin: 0; */
+  background: #ffffff;
+  /* overflow: hidden; */
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* scroll bar styling */
+:root {
+  --primary: #8bb9f4;
+  /* --primary: #252837; */
+  --secondary: #4290f5;
+}
+
+*::-webkit-scrollbar {
+  /* width: 15px; */
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 14px;
+  border: 2px solid var(--primary);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
